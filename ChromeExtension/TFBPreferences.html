@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <title>TheFactBook Extension - Preferences</title>
-  </head>
-  <body>
-    <h1>TheFactBook - Preferences</h1>
+
+<head>
+  <meta charset="utf-8" />
+  <title>TheFactBook Extension - Preferences</title>
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="public/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="content">
+    <h1 class="box-principal">TheFactBook - Preferences</h1>
+    <hr><br>
     <form>
-      <label for="UrlInput">TFB Url:</label><br/>
-      <input id="UrlInput" type="text" name="TfbUrl" value="" required/><br/>
-      <label for="TimeoutInput">Timeout:</label><br/>
-      <input id="TimeoutInput" type="number" name="TfbTimeout" value="" required/><br/>
-      <label for="UsernameInput">Username:</label><br/>
-      <input id="UsernameInput" type="text" name="TfbUsername" value="" required/><br/>
-      <label for="PasswordInput">Password:</label><br/>
-      <input id="PasswordInput" type="password" name="TfbPassword" value="" required/><br/>
-      <label for="EditBeforeSendCheckbox">Edit before send: </label>
-      <input type="checkbox" id="EditBeforeSendCheckbox" /><br/>
-      <input id="SaveButton" type="button" value="Save" />
+      <label for="UrlInput">TFB Url: </label><br>
+      <i class="icon-external-link"></i> <input id="UrlInput" type="text" name="TfbUrl" value="" required /><br />
+      <label for="TimeoutInput">Timeout: </label> <br>
+      <i class="icon-time"></i>  <input id="TimeoutInput" type="number" name="TfbTimeout" value="" required /><br />
+      <label for="UsernameInput">Username: </label> <br>
+      <i class="icon-user"></i>     <input id="UsernameInput" type="text" name="TfbUsername" value="" required /><br />
+      <label for="PasswordInput">Password: </label><br>
+      <i class="icon-key"></i> <input id="PasswordInput" type="password" name="TfbPassword" value="" required /><br /><br />
+      <div class="box-principal">
+        <label for="EditBeforeSendCheckbox">Edit before send: </label>
+        <input type="checkbox" id="EditBeforeSendCheckbox" /><br /><br />
+        
+        <input id="SaveButton" type="button" value="Save" />
+        <div id="StatusLabel"></div>
+      </div>
     </form>
-  </body>
-  <div id="StatusLabel"></div>
+  </div>
   <script src="TFBPreferences.js"></script>
+</body>
+
 </html>

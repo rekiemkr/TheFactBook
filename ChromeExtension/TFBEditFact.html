@@ -1,30 +1,42 @@
 <html>
-  <head>
-    <title>Edit fact before send</title>
-    <script src="TFBEditFact.js"></script>
-  </head>
-  <body>
-    <form id="EditFactForm">
-      <table>
-	<tbody>
-	  <tr>
-	    <td><label for="FactInput">Fact:</label></td>
-	    <td><textarea id="FactInput" style="width: 240px; height: 100px;"></textarea></td>
-	  </tr>
-	  <tr>
-	    <td><label for="SourceInput">Source:</label></td>
-	    <td><input for="text" id="SourceInput" /></td>
-	  </tr>
-	  <tr>
-	    <td><label for="TagsInput">Tags (Comma separated): </label></td>
-	    <td><input type="text" id="TagsInput" /></td>
-	  </tr>
-	  <tr>
-	    <td><label for="EditOption">Don't show again</label></td>
-	    <td><input type="checkbox" id="EditOption" /></td>
-	  </tr>
+
+<head>
+	<title>Edit fact before send</title>
+	<link rel="stylesheet" href="public/css/style.css">
+	<link rel="stylesheet" href="public/css/font-awesome.min.css">
+</head>
+
+<body>
+	<form id="EditFactForm">
+		<div class="box-principal">
+		<table>
+			<tbody>
+				<tr>
+					<td><i class="icon-edit"></i> </td>
+					<td><label for="FactInput">Fact:</label></td>
+					<td><textarea id="FactInput" class="FactInput"></textarea></td>
+				</tr>
+				<tr>
+					<td><i class="icon-external-link"></i></td>
+					<td><label for="SourceInput">Source:</label></td>
+					<td><input for="text" id="SourceInput" /></td>
+				</tr>
+				<tr>
+					<td><i class="icon-tags"></i></td>
+					<td><label for="TagsInput">Tags (Comma separated): </label></td>
+					<td><input type="text" id="TagsInput" /></td>
+				</tr>
+				<tr>
+					<td><i class="icon-ban-circle"></i> </td>
+					<td><label for="EditOption">Don't show again</label></td>
+					<td><input type="checkbox" id="EditOption" /></td>
+				</tr>
+		</table>
+		
+		<p><input type="Submit" id="SubmitButton" value="Send" /></p>
+		</div>
+	</form>
+	<script src="TFBEditFact.js"></script>
 	</tbody>
-      </table>
-      <p><input type="Submit" id="SubmitButton" value="Send" /></p>
-    </form>
+
 </html>

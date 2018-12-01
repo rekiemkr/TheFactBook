@@ -1,0 +1,26 @@
+.box-principal{
+    text-align: center;
+}
+.input{
+    width: 120px;
+}
+.content{
+    width: 200px; 
+}
+body{
+    padding: 5px;
+}
+input{
+    width: 170px;
+}
+.FactInput{
+    width: 240px; 
+    height: 80px;
+}
+.box-principal input{
+    width: 240;
+}
+th, td {
+    padding: 2px;
+    text-align: left;
+}
